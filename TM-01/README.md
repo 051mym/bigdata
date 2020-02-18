@@ -15,13 +15,21 @@ Terdapat 8 file yang digolongkan berdasarkan bahan utama resep makanan
 
 Data Preparation:
 Pada tahapan ini saya membagi dataset menjadi 2 yaitu dbms Mysql dan .csv file
-(Tahapan import)
-foto"
+Langkah import mysql 
+![Import](/dokumentasi/Screenshot (1).png
+hasil
+![Hasil Import](/dokumentasi/Screenshot (2).png
+
 
 Modelling:
-Cara" knime
+![Model](/dokumentasi/Screenshot (3).png
 
 Evaluation:
+Proses model diatas sudah berhasil
+Kita mendapatkan sebuah tabel yang berisi semua data keseluruhan yang sudah ditambahkan kolom type masakan.
+
+![Berhasil](/dokumentasi/Screenshot (4).png
 
 Deployment:
-csv and mysql
+file final_csv_data.csv
+dan ![Mysql](/dokumentasi/Screenshot (4).png
