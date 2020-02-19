@@ -32,4 +32,5 @@ Kita mendapatkan sebuah tabel yang berisi semua data keseluruhan yang sudah dita
 
 # Deployment:
 file final_csv_data.csv
-dan ![Mysql](/dokumentasi/Screenshot(4).png)
+dan ![Mysql](https://github.com/051mym/bigdata/blob/master/TM-01/dokumentasi/Screenshot(4).png)
+dan sql file
