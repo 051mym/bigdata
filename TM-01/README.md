@@ -16,19 +16,19 @@ Terdapat 8 file yang digolongkan berdasarkan bahan utama resep makanan
 # Data Preparation:
 ## Pada tahapan ini saya membagi dataset menjadi 2 yaitu dbms Mysql dan .csv file
 Import mysql 
-![Import](/dokumentasi/Screenshot(1).png)
+![Import](https://github.com/051mym/bigdata/blob/master/TM-01/dokumentasi/Screenshot(1).png)
 hasil
-![Hasil Import](/dokumentasi/Screenshot(2).png)
+![Hasil Import](https://github.com/051mym/bigdata/blob/master/TM-01/dokumentasi/Screenshot(2).png)
 
 
 # Modelling:
-![Model](/dokumentasi/Screenshot(3).png)
+![Model](https://github.com/051mym/bigdata/blob/master/TM-01/dokumentasi/Screenshot(3).png)
 
 # Evaluation:
 Proses model diatas sudah berhasil
 Kita mendapatkan sebuah tabel yang berisi semua data keseluruhan yang sudah ditambahkan kolom type masakan.
 
-![Berhasil](/dokumentasi/Screenshot(4).png)
+![Berhasil](https://github.com/051mym/bigdata/blob/master/TM-01/dokumentasi/Screenshot(4).png)
 
 # Deployment:
 file final_csv_data.csv
