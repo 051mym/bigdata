@@ -7,7 +7,7 @@ Dokumentasi resmi KNIME > https://www.knime.com/blog/movie-recommendations-with-
 2. Hasil
 ![Hasil](./dokumentasi/hasil.png)
 3. Hasil csv
-![Hasil CSV](./dokumentasi/hasilcsv.png)
+![Hasil CSV](./dokumentasi/deploy3.png)
 
 ## Dokumentasi
 ### Business Understanding
