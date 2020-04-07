@@ -1,5 +1,5 @@
 # Movie Recommendations with Spark Collaborative Filtering
-Dokumentasi resmi [KNIME](ttps://www.knime.com/blog/movie-recommendations-with-spark-collaborative-filtering "Knime Documentation")
+Dokumentasi resmi ![Knime](https://www.knime.com/blog/movie-recommendations-with-spark-collaborative-filtering "Knime Documentation")
 
 ## Overview
 1. Knime workflow
