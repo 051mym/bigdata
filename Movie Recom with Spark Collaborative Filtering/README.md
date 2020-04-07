@@ -6,6 +6,8 @@ Dokumentasi resmi KNIME > https://www.knime.com/blog/movie-recommendations-with-
 ![Knime Workflow](./dokumentasi/workflow.png)
 2. Hasil
 ![Hasil](./dokumentasi/hasil.png)
+3. Hasil csv
+![Hasil CSV](./dokumentasi/hasilcsv.png)
 
 ## Dokumentasi
 ### Business Understanding
@@ -89,3 +91,15 @@ Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam film-film lain
 6. File reader > Mengambil data film dari file movies.csv
 7. Joiner > Menggabungkan data movies dan hasil rekomendasi user
 8. Display Reccomendation > Menampilkan hasil rekomendasi kepada user
+
+![Deployment3](./dokumentasi/deploy3.png)
+
+9. Jika ingin output csv maka anda dapat menambahkan node csv writer untuk menyimpan tabel rekomendasi kedalam file csv
+
+## Perbandingan File Reader dan CSV to Spark 
+Node | Waktu 
+--- | ---
+File Reader | 3 menit 
+CSV to Spark | 2 menit
+
+Dari data diatas dapat disimpulkan waktu untuk eksekusi csv to spark lebih cepat daripada File Reader. Jika anda ingin memasukkan table csv ke spark table, disarankan untuk memakai node csv to spark. Karena jika anda menggunakan file reader maka anda perlu node "table to spark" untuk mengubah bentuk tabel knime ke tabel spark DataFrame/RDD
