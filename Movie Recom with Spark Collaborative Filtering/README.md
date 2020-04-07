@@ -97,9 +97,11 @@ Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam film-film lain
 9. Jika ingin output csv maka anda dapat menambahkan node csv writer untuk menyimpan tabel rekomendasi kedalam file csv
 
 ## Perbandingan File Reader dan CSV to Spark 
-Node | Waktu 
+Node | Durasi Eksekusi 
 --- | ---
-File Reader | 3 menit 
-CSV to Spark | 2 menit
+File Reader | 02:41 
+CSV to Spark | 00:39
 
-Dari data diatas dapat disimpulkan waktu untuk eksekusi csv to spark lebih cepat daripada File Reader. Jika anda ingin memasukkan table csv ke spark table, disarankan untuk memakai node csv to spark. Karena jika anda menggunakan file reader maka anda perlu node "table to spark" untuk mengubah bentuk tabel knime ke tabel spark DataFrame/RDD
+Dari data diatas dapat disimpulkan waktu untuk eksekusi csv to spark lebih cepat daripada File Reader. Jika anda ingin memasukkan table csv ke spark table, disarankan untuk memakai node csv to spark. Karena jika anda menggunakan file reader maka anda perlu node "table to spark" untuk mengubah bentuk tabel knime ke tabel spark DataFrame/RDD.
+
+Dengan bentuk file Spark DataFrame/RDD waktu eksekusi pemrosesan data lebih cepat. Hal ini juga ditukung dari fitur spark yang dapat memaksimalkan kinerja tiap core pada komputer.
