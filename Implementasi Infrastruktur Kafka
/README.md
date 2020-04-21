@@ -3,17 +3,17 @@
 
 
 ## Persiapan
-1. install docker 'sudo pacman docker'
-2. install docker-compose 'sudo pacman docker-compose'
+1. install docker `sudo pacman docker`
+2. install docker-compose `sudo pacman docker-compose`
 3. install kafkatool
     - buka aplikasi pamac
     - search kafkatool
     - install / build
 
 ## Langkah-langkah instalasi kafka
-1. Buat direktori kafka 'mkdir karka-install'
+1. Buat direktori kafka `mkdir karka-install`
 2. Lalu buat konfigurasi kafka docker-compose.yml dan isikan kode seperti dibawah
-    '''
+    ```
     version: '2'
 
     networks:
@@ -53,7 +53,7 @@
         - ALLOW_PLAINTEXT_LISTENER=yes
         depends_on:
         - zookeeper-server
-    '''
+    ```
 ![Konfigurasi kluster](./dokumentasi/1.png)
     
 Pada konfigurasi diatas kita akan membuat zookeeper dengan port 2181:2181, dan 2 server kafka dengan localhost server pada port 9092 dan 9093. Dimana dalam zookeeper dan server kafka dihubungkan oleh networks bernama 'kafka-net'.
