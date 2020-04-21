@@ -67,7 +67,7 @@ atau menggunakan telnet
 ![Cek run telnet](./dokumentasi/4.png)
 
 ## Connect dengan kafkatool gui
-1. Buka aplikasi kafkatool
+1. Buka aplikasi kafkatool <br>
 ![Open kafkatool](./dokumentasi/5.png)
 2. Add kluster dan isikan sesuai gambar dibawah
 ![Open](./dokumentasi/6.png)
