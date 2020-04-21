@@ -72,7 +72,7 @@ atau menggunakan telnet
 2. Add kluster dan isikan sesuai gambar dibawah
 ![Open](./dokumentasi/6.png)
 3. Klik kanan kluster yang telah kita buat dan connect. Maka kluster sudah terhubung dengan kafkatool
-![Open](./dokumentasi/7.png)
+![Connect](./dokumentasi/7.png)
 
 
 
