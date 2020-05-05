@@ -134,13 +134,19 @@ Dengan menggunakan langkah-langkah didapatkan data seperti dibawah ini:
 ![c2 w2](./dokumentasi/11.png))
 
 ### Worker 2 core 4
-![c2 w2](./dokumentasi/12.png))
+![c4 w2](./dokumentasi/12.png))
 
 ### Worker 5 core 2
-![c2 w2](./dokumentasi/13.png))
+![c2 w5](./dokumentasi/13.png))
 
 ### Worker 5 core 4
-![c2 w2](./dokumentasi/14.png))
+![c4 w5](./dokumentasi/14.png))
+
+## Kesimpulan
+- Semakin banyak Job (Partisi) yang digunakan, maka proses overhead dari map-reduce akan semakin lama. Terlebih lagi jika jumlah worker banyak.
+- Semakin banyak jumlah worker dan CPU Cores untuk setiap worker, maka proses pengerjaanya semakin cepat.
+- Data kecil lebih bagus dikerjakan oleh worker yang sedikit, karena jika data besar untuk worker sedikit maka proses komputasi akan lama
+- Data besar lebih bagus dikerjakan oleh worker yang banyak. Jika data kecil dikerjakan oleh banyak worker maka proses pembagian job akan lama
 
 
 
