@@ -125,22 +125,10 @@ Dengan menggunakan langkah-langkah didapatkan data seperti dibawah ini:
 | 2  | 2 | 1000 | 1,7 min |
 | 2  | 4 | 10 | 12 s |
 | 2  | 4 | 1000 | 1,7 min |
-| 5  | 2 | 10 |  |
-| 5  | 2 | 1000 |  |
-| 5  | 4 | 10 |  |
-| 5  | 4 | 1000 |  |
-
-### Worker 2 core 2
-![c2 w2](./dokumentasi/11.png))
-
-### Worker 2 core 4
-![c4 w2](./dokumentasi/12.png))
-
-### Worker 5 core 2
-![c2 w5](./dokumentasi/13.png))
-
-### Worker 5 core 4
-![c4 w5](./dokumentasi/14.png))
+| 5  | 2 | 10 | 2,1 min |
+| 5  | 2 | 1000 | 1,2 min |
+| 5  | 4 | 10 | 3,2 min |
+| 5  | 4 | 1000 | 1 min |
 
 ## Kesimpulan
 - Semakin banyak Job (Partisi) yang digunakan, maka proses overhead dari map-reduce akan semakin lama. Terlebih lagi jika jumlah worker banyak.
