@@ -2,13 +2,13 @@
 Source resmi KNIME > https://hub.knime.com/knime/spaces/Examples/latest/10_Big_Data/02_Spark_Executor/02_Mass_Learning_Event_Prediction_MLlib_to_PMML
 
 ## Overview
-1. Knime workflow
+1. Knime workflow <br>
 ![Knime Workflow](./dokumentasi/1.PNG)
-2. Hasil MLlib model to PMML
+2. Hasil MLlib model to PMML <br>
 ![Hasil mllib to pmml](./dokumentasi/2.PNG)
-3. Hasil score prediction
+3. Hasil score prediction <br>
 ![Hasil score](./dokumentasi/3.PNG)
-4. Hasil fast prediction
+4. Hasil fast prediction <br>
 ![Hasil fast](./dokumentasi/4.PNG)
 
 ## Dokumentasi
@@ -76,5 +76,5 @@ Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam inputan fast (
 4. Table to Json > Mengubah hasil cluster prediksi menjadi json file
 5. Container Output (JSON) > Membaca isi json
 
-Hasil
+Hasil <br>
 ![Hasil Ahir](./dokumentasi/9.PNG)
