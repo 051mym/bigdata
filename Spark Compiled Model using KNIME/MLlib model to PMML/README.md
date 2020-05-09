@@ -1,5 +1,5 @@
 # MLlib model to PMML
-Source resmi KNIME > https://hub.knime.com/knime/spaces/Examples/latest/10_Big_Data/02_Spark_Executor/02_Mass_Learning_Event_Prediction_MLlib_to_PMML
+Source resmi KNIME > https://kni.me/w/N5EFBmqTemg3eKvn
 
 ## Overview
 1. Knime workflow <br>
