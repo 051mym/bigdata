@@ -3,13 +3,13 @@ Source resmi KNIME > https://hub.knime.com/knime/spaces/Examples/latest/10_Big_D
 
 ## Overview
 1. Knime workflow
-![Knime Workflow](./dokumentasi/1.png)
+![Knime Workflow](./dokumentasi/1.PNG)
 2. Hasil MLlib model to PMML
-![Hasil mllib to pmml](./dokumentasi/2.png)
+![Hasil mllib to pmml](./dokumentasi/2.PNG)
 3. Hasil score prediction
-![Hasil score](./dokumentasi/3.png)
+![Hasil score](./dokumentasi/3.PNG)
 4. Hasil fast prediction
-![Hasil fast](./dokumentasi/4.png)
+![Hasil fast](./dokumentasi/4.PNG)
 
 ## Dokumentasi
 ### Business Understanding
@@ -31,14 +31,14 @@ Kedua data memiliki struktur sama hanya isi datanya saja yang berbeda
 ### Data Preparation
 
 Tahapan ini tidak terlalu diterapkan pada workflow knime kali ini. Dikarenakan data iris sudah bersih dan tidak perlu dirubah untuk menyesuaikan tahapan modeling. Data inputan dari user berupa file json yang memiliki 4 atribut (sepal & petal)
-![Data inputan json](./dokumentasi/5.png)
+![Data inputan json](./dokumentasi/5.PNG)
 
 ### Modelling
 
 Pada tahap ini kita akan membuat modeling yang akan digunakan sebagai dasar pembuatan lambda architecture untuk machine learning. .
 MLlib model to PMML diimplementasikan untuk mengkonversi model MLlib pada spark menjadi PMML untuk prediksi data.
 
-![Modelling](./dokumentasi/6.png)
+![Modelling](./dokumentasi/6.PNG)
 
 #### Langkah - langkah modelling
 1. Create Local Big Data Environment > Membuat semua fungsi local big data environment diantaranya Apache Hive, Apache Spark dan HDFS.
@@ -54,7 +54,7 @@ Selesai langkah diatas maka dihasilkan Compiled Model yang siap diuji cobakan ke
 
 Proses selanjutnya kita akan mengevaluasi apakah modeling sudah memberikan hasil yang baik. Model yang telah didapatkan pada tahapan modeling dites menggunakan data_testing.csv menggunakan Compiled Model Predictor untuk memprediksi cluster dan melihat kulaitas model dengan node Entropy Scorer.
 
-![Evaluation](./dokumentasi/7.png)
+![Evaluation](./dokumentasi/7.PNG)
 
 #### Langkah-langkah evaluasi
 1. File reader > Membaca file csv data_testing
@@ -67,7 +67,7 @@ Jika value sudah mendekati, maka model sudah benar dan siap untuk digunakan seba
 
 Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam inputan fast (dapat berupa online) lainya yang belum diklasifikasikan. Dengan menggunakan Compiled Model Predictor kita akan memprediksi kelas dari data yang diberikan.
 
-![Deployment](./dokumentasi/8.png)
+![Deployment](./dokumentasi/8.PNG)
 
 #### Langkah-langkah deployment
 1. Container Input Json > Sebagai data inputan user berupa json
@@ -77,4 +77,4 @@ Model yang sudah dievaluasi akan digunakan sebagai prediksi dalam inputan fast (
 5. Container Output (JSON) > Membaca isi json
 
 Hasil
-![Deployment3](./dokumentasi/9.png)
+![Hasil Ahir](./dokumentasi/9.PNG)
