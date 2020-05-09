@@ -25,7 +25,7 @@ Dataset training.csv & data_testing.csv memiliki 75 data memiliki 5 kolom dengan
   - sepal width = lebar sepal bunga
   - petal length = panjang petal bunga
   - petal width = lebar petal bunga
-  - class = jenis bunga iris (Iris-Setosa, Iris-Versicolour, Iris-Virginica)
+  - class = jenis bunga iris (Iris-Setosa, Iris-Versicolour, Iris-Virginica) <br>
 Kedua data memiliki struktur sama hanya isi datanya saja yang berbeda
 
 ### Data Preparation
