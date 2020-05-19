@@ -40,7 +40,7 @@ Dataset memiliki 44 baris data yang memiliki 3 kolom atribut dengan keterangan :
 
 ### Data Preparation
 
-Tahapan ini kita mengubah dataset ke hive mengubahnya menjadi spark. Dikarenakan data sudah cukup bersih maka kita tidak perlu mencari field null dll. Kita hanya untuk mempersiapkan data untuk tahapan modeling.
+Tahapan ini kita mengubah dataset ke hive untuk diolah di spark.
 
 ![Data preparation](./dokumentasi/9.PNG)
 
@@ -162,6 +162,31 @@ Pada workflow diatas terdapat proses-proses :
     ![Rata minggu5](./dokumentasi/47.PNG) <br>
     Hasilnya menjadi <br>
     ![Rata minggu6](./dokumentasi/48.PNG)
+
+  - Mencari rata-rata pengunaan listrik per dayofweek dengan cara:
+    - SUM kolom kw30 dan groupby meterid, year, week, dayOfWeek
+    ![Rata dayminggu1](./dokumentasi/49.PNG)
+    ![Rata dayminggu2](./dokumentasi/50.PNG)
+    - MEAN kolom SUM(kw30) dengan pivot dayOfWeek dan groupby meterid
+    ![Rata dayminggu3](./dokumentasi/51.PNG)
+    ![Rata dayminggu4](./dokumentasi/52.PNG)
+    ![Rata dayminggu4](./dokumentasi/53.PNG)
+    - Rename kolom hasil ditas menjadi avg[day].
+    ![Rata dayminggu5](./dokumentasi/54.PNG) <br>
+    Hasilnya menjadi <br>
+    ![Rata dayminggu6](./dokumentasi/55.PNG)
+
+  - Mencari rata-rata pengunaan listrik per day dengan cara: lol
+    - SUM kolom kw30 dan groupby meterid, eventDate
+    ![Rata dayminggu1](./dokumentasi/67.PNG)
+    ![Rata dayminggu2](./dokumentasi/68.PNG)
+    - MEAN kolom SUM(kw30) dan groupby meterid
+    ![Rata dayminggu3](./dokumentasi/69.PNG)
+    ![Rata dayminggu4](./dokumentasi/70.PNG)
+    - Rename kolom hasil ditas menjadi avg[day].
+    ![Rata dayminggu5](./dokumentasi/71.PNG) <br>
+    Hasilnya menjadi <br>
+    ![Rata dayminggu6](./dokumentasi/71.PNG)
 
   - Mencari rata-rata pengunaan listrik per dayofweek dengan cara:
     - SUM kolom kw30 dan groupby meterid, year, week, dayOfWeek
