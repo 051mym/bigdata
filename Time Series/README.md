@@ -54,9 +54,9 @@ Tahapan ini kita mengubah dataset ke hive mengubahnya menjadi spark. Dikarenakan
 3. Load data > Meload dataset meter menjadi hive
 ![Load data](./dokumentasi/2.PNG)
   - DB Table Connector > Membuat tabel database baru dari dataset yang telah dibaca
-![Table connector](./dokumentasi/13.PNG)
+  ![Table connector](./dokumentasi/13.PNG)
   - DB Loader > Meload data banyak dari database Hive <br>
-![DB Loader](./dokumentasi/14.PNG)
+  ![DB Loader](./dokumentasi/14.PNG)
 4. Hive to Spark > Mengimpor hasil dari query Hive inputan menjadi Spark sebagai DataFrame / RDD
 ![Hasil hive to spark](./dokumentasi/15.PNG)
 
@@ -123,8 +123,8 @@ Pada workflow diatas terdapat proses-proses :
     ![Total listrik1](./dokumentasi/27.PNG)
     ![Total listrik2](./dokumentasi/28.PNG)
     - Rename kolom hasil sum menjadi totalKW
-    ![Rename kolom](./dokumentasi/29.PNG)
-    Hasilnya menjadi
+    ![Rename kolom](./dokumentasi/29.PNG) <br>
+    Hasilnya menjadi <br>
     ![Hasil total](./dokumentasi/30.PNG)
 
   - Mencari rata-rata pengunaan listrik per tahun dengan cara:
@@ -135,8 +135,8 @@ Pada workflow diatas terdapat proses-proses :
     ![Rata tahun3](./dokumentasi/33.PNG)
     ![Rata tahun4](./dokumentasi/34.PNG)
     - Rename kolom hasil MEAN menjadi avgYearlyKW
-    ![Rata tahun5](./dokumentasi/35.PNG)
-    Hasilnya menjadi
+    ![Rata tahun5](./dokumentasi/35.PNG) <br>
+    Hasilnya menjadi <br>
     ![Rata tahun6](./dokumentasi/36.PNG)
 
   - Mencari rata-rata pengunaan listrik per bulan dengan cara:
@@ -147,8 +147,8 @@ Pada workflow diatas terdapat proses-proses :
     ![Rata bulan3](./dokumentasi/39.PNG)
     ![Rata bulan4](./dokumentasi/40.PNG)
     - Rename kolom hasil MEAN menjadi avgMonthlyKW
-    ![Rata bulan5](./dokumentasi/41.PNG)
-    Hasilnya menjadi
+    ![Rata bulan5](./dokumentasi/41.PNG) <br>
+    Hasilnya menjadi <br>
     ![Rata bulan6](./dokumentasi/42.PNG)
 
   - Mencari rata-rata pengunaan listrik per minggu dengan cara:
@@ -159,8 +159,8 @@ Pada workflow diatas terdapat proses-proses :
     ![Rata minggu3](./dokumentasi/45.PNG)
     ![Rata minggu4](./dokumentasi/46.PNG)
     - Rename kolom hasil MEAN menjadi avgWeeklyKW
-    ![Rata minggu5](./dokumentasi/47.PNG)
-    Hasilnya menjadi
+    ![Rata minggu5](./dokumentasi/47.PNG) <br>
+    Hasilnya menjadi <br>
     ![Rata minggu6](./dokumentasi/48.PNG)
 
   - Mencari rata-rata pengunaan listrik per dayofweek dengan cara:
@@ -172,12 +172,12 @@ Pada workflow diatas terdapat proses-proses :
     ![Rata dayminggu4](./dokumentasi/52.PNG)
     ![Rata dayminggu4](./dokumentasi/53.PNG)
     - Rename kolom hasil ditas menjadi avg[day].
-    ![Rata dayminggu5](./dokumentasi/54.PNG)
-    Hasilnya menjadi
+    ![Rata dayminggu5](./dokumentasi/54.PNG) <br>
+    Hasilnya menjadi <br>
     ![Rata dayminggu6](./dokumentasi/55.PNG)
 
   - Penggabungan semua DataFrame/RDDs dengan menggunakan Spark joiner. Karena spark joiner hanya bisa menggabungkan 2 DataFrame/RDDs maka hasil workflow penggabungan menjadi seperti dibawah.
-  ![Spark joiner](./dokumentasi/56.PNG)
+  ![Spark joiner](./dokumentasi/56.PNG) <br>
   Kita menggabungkan dengan inner join, dengan meterid sebagai key joinya. Serta menginclude semua kolomnya
   ![Spark joiner](./dokumentasi/57.PNG)
   ![Spark joiner](./dokumentasi/58.PNG)
@@ -199,17 +199,17 @@ Hasil visualisasinya
 
 ### Deployment
 
-![Deploy1](./dokumentasi/64.PNG)
+![Deploy1](./dokumentasi/64.PNG) <br>
 Tahapan ini kita akan mendeploy hasil spark DataFrame dari proses wvaluation menjadi tabel hive dan parquet file menggunakan node dibawah
 
 - Spark to Hive > Mengkonversi Spark DataFrame menjadi tabel hive
 Konfigurasi
-![Deploy2](./dokumentasi/65.PNG)
-Hasil
+![Deploy2](./dokumentasi/65.PNG) <br>
+Hasil <br>
 ![Hasil deploy1](./dokumentasi/6.PNG)
 - Spatk to Parquet > Mengkonversi Spark DataFame menjadi parquet file
 Konfigurasi
-![Hasil deploy1](./dokumentasi/66.PNG)
-Hasil
+![Hasil deploy1](./dokumentasi/66.PNG) <br>
+Hasil <br>
 ![Hasil deploy2](./dokumentasi/7.PNG)
 
