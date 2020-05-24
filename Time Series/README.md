@@ -176,7 +176,7 @@ Pada workflow diatas terdapat proses-proses :
     Hasilnya menjadi <br>
     ![Rata dayminggu6](./dokumentasi/55.PNG)
 
-  - Mencari rata-rata pengunaan listrik per day dengan cara: lol
+  - Mencari rata-rata pengunaan listrik per day dengan cara:
     - SUM kolom kw30 dan groupby meterid, eventDate
     ![Rata dayminggu1](./dokumentasi/67.PNG)
     ![Rata dayminggu2](./dokumentasi/68.PNG)
@@ -186,20 +186,45 @@ Pada workflow diatas terdapat proses-proses :
     - Rename kolom hasil ditas menjadi avg[day].
     ![Rata dayminggu5](./dokumentasi/71.PNG) <br>
     Hasilnya menjadi <br>
-    ![Rata dayminggu6](./dokumentasi/71.PNG)
+    ![Rata dayminggu6](./dokumentasi/72.PNG)
 
-  - Mencari rata-rata pengunaan listrik per dayofweek dengan cara:
-    - SUM kolom kw30 dan groupby meterid, year, week, dayOfWeek
-    ![Rata dayminggu1](./dokumentasi/49.PNG)
-    ![Rata dayminggu2](./dokumentasi/50.PNG)
-    - MEAN kolom SUM(kw30) dengan pivot dayOfWeek dan groupby meterid
-    ![Rata dayminggu3](./dokumentasi/51.PNG)
-    ![Rata dayminggu4](./dokumentasi/52.PNG)
-    ![Rata dayminggu4](./dokumentasi/53.PNG)
-    - Rename kolom hasil ditas menjadi avg[day].
-    ![Rata dayminggu5](./dokumentasi/54.PNG) <br>
+  - Mencari rata-rata pengunaan listrik per day segment dengan cara:
+    - SUM kolom kw30 dan groupby meterid, eventdate, daySegment
+    ![Rata dayminggu1](./dokumentasi/73.PNG)
+    ![Rata dayminggu2](./dokumentasi/74.PNG)
+    - MEAN kolom tadi dengan pivot daysegment dan groupby meterid
+    ![Rata dayminggu3](./dokumentasi/75.PNG)
+    ![Rata dayminggu4](./dokumentasi/76.PNG)
+    ![Rata dayminggu4](./dokumentasi/77.PNG)
+    - Rename kolom hasil ditas menjadi avg_[daysegment].
+    ![Rata dayminggu5](./dokumentasi/78.PNG) <br>
     Hasilnya menjadi <br>
-    ![Rata dayminggu6](./dokumentasi/55.PNG)
+    ![Rata dayminggu6](./dokumentasi/79.PNG)
+
+  - Mencari rata-rata pengunaan listrik per day classifier dengan cara:
+    - SUM kolom kw30 dan groupby meterid, year, month, week, dayClassifier
+    ![Rata dayminggu1](./dokumentasi/80.PNG)
+    ![Rata dayminggu2](./dokumentasi/81.PNG)
+    - MEAN kolom tadi dengan pivot dayClassifier dan groupby meterid
+    ![Rata dayminggu3](./dokumentasi/82.PNG)
+    ![Rata dayminggu4](./dokumentasi/83.PNG)
+    ![Rata dayminggu4](./dokumentasi/84.PNG)
+    - Rename kolom hasil ditas menjadi avg_[dayClassifier].
+    ![Rata dayminggu5](./dokumentasi/85.PNG) <br>
+    Hasilnya menjadi <br>
+    ![Rata dayminggu6](./dokumentasi/86.PNG)
+
+  - Mencari rata-rata pengunaan listrik per jam dengan cara:
+    - SUM kolom kw30 dan groupby meterid, eventDate, hour 
+    ![Rata dayminggu1](./dokumentasi/87.PNG)
+    ![Rata dayminggu2](./dokumentasi/88.PNG)
+    - MEAN kolom tadi dan groupby meterid
+    ![Rata dayminggu3](./dokumentasi/89.PNG)
+    ![Rata dayminggu4](./dokumentasi/90.PNG)
+    - Rename kolom hasil ditas menjadi avg_[dayClassifier].
+    ![Rata dayminggu5](./dokumentasi/91.PNG) <br>
+    Hasilnya menjadi <br>
+    ![Rata dayminggu6](./dokumentasi/92.PNG)
 
   - Penggabungan semua DataFrame/RDDs dengan menggunakan Spark joiner. Karena spark joiner hanya bisa menggabungkan 2 DataFrame/RDDs maka hasil workflow penggabungan menjadi seperti dibawah.
   ![Spark joiner](./dokumentasi/56.PNG) <br>
